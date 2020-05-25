@@ -1,0 +1,591 @@
+﻿
+/*--- Start Layout code ----------------------------------------------------------------*/
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: lightgrey;
+        padding-top: 1%;
+        padding-left: 6%;
+        padding-right: 6%;
+        font-family: Arial;
+        font-size: 22px;
+        color: black;
+        line-height: 26px;
+        text-align: justify;
+    }
+
+    .wrapper-home {
+        background: url(images/background1.png);
+        background-position: center;
+        background-color: white;
+        background-repeat: no-repeat;
+        border: 2px solid black;
+        width: 100%;
+        height: 96vh;
+    }
+
+    .wrapper {
+        background-color: white;
+        border: 2px solid black;
+        width: 100%;
+        height: 96vh;
+    }
+
+    p {
+        text-indent: 5%;
+        font-size: 15px;
+    }
+
+    h3 {
+        text-indent: 5%;
+        font-size: 20px;
+    }
+
+    .logo {
+        float: right;
+        background: url(images/logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 80px;
+        height: 72px;
+        margin-top: -75px;
+        margin-right: -98px;
+    }
+
+    .logo a {
+        width: 80px;
+        height: 72px;
+    }
+
+/*--- Start Layout code ----------------------------------------------------------------*/
+
+/*--- Start Navigation ----------------------------------------------------------------*/
+
+    .main-nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: darkgreen;
+        background-color: darkgreen;
+        overflow-x: hidden;
+        opacity: 0.99;
+        transition: 1s;
+    }
+
+    .nav-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+
+    .main-nav a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .main-nav a:hover, .overlay a:focus {
+        color: white;
+    }
+
+    .nav-content a.active {
+        color: white;
+    }
+
+    .main-nav .closebtn {
+        position: absolute;
+        top: 40px;
+        right: 60px;
+        font-size: 80px;
+    }
+
+    .hamburger-wrap {
+        border: 2px solid black;
+        background-color: white;
+        width: 80px;
+        height: 83px;
+        margin-left: -100px;
+        margin-top: 10px;
+    }
+
+    .hamburger {
+        border: 1px solid black;
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 66px;
+        font-size: 50px;
+        cursor: pointer;
+        color: black;
+    }
+
+/*--- End Navigation ----------------------------------------------------------------*/
+
+/*--- Start Buttons ----------------------------------------------------------------*/
+
+    .home-nav {
+        margin-top: 705px;
+        text-align: center;
+    }
+
+    .home-nav a {
+        border-color: black;
+        border-style: inset;
+        border-width: 7px;
+        padding: 10px 60px;
+        color: black;
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 30px;
+        text-transform: uppercase;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+    }
+
+    .home {
+        background-color: white;
+        font-family: "Arial";
+    }
+
+    .home:hover {
+        background-color: lightgrey;
+        transition: all 0.2s ease-in;
+    }
+
+/*--- End Buttons ----------------------------------------------------------------*/
+
+/*--- Start Homepage Code ----------------------------------------------------------------*/
+/*--- Start Upload Button ----------------------------------------------------------------*/
+
+    .upload-btn {
+        border-color: black;
+        border-style: inset;
+        border-width: 7px;
+        padding: 10px 60px;
+        color: black;
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 30px;
+        text-transform: uppercase;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+    }
+
+    .upload-btn:hover {
+        background-color: lightgrey;
+        transition: all 0.2s ease-in;
+    }
+
+/*--- End Upload Button ----------------------------------------------------------------*/
+
+/*--- Start Upload Overlay ----------------------------------------------------------------*/
+
+    .upload-popup {
+        background-color: white;
+        display: none;
+        width: 300px;
+        bottom: 8%;
+        position: fixed;
+        right: 20%;
+        border: 3px solid black;
+        z-index: 5;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+    }
+
+    .upload-container {
+        padding: 15px;
+        background-color: white;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+    }
+
+    .upload-container .btn {
+        background-color: white;
+        color: black;
+        padding: 16px 20px;
+        border: 2px solid black;
+        cursor: pointer;
+        width: 48%;
+        margin-bottom: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+/*--- End Upload Overlay ----------------------------------------------------------------*/
+/*--- End Homepage Code ----------------------------------------------------------------*/
+
+/*--- Start Create Code ----------------------------------------------------------------*/
+
+/*--- Start Advanced Colour Pallet Code ----------------------------------------------------------------*/
+
+    #colorTable {
+        width: 231px;
+        height: 132px;
+        position: absolute;
+        margin-top: 8px;
+        z-index: 999999;
+        right: 80px;
+        background-color: #000000;
+        display: none;
+        cursor: pointer;
+    }
+
+    .color {
+        position: relative;
+        height: 7px;
+        width: 7px;
+        float: left;
+        padding: 1px;
+        margin: 1px;
+    }
+
+    .color:hover {
+        border: solid 1px #FFF;
+        margin: 0px;
+    }
+
+/*--- End Advanced Colour Pallet Code ----------------------------------------------------------------*/
+
+/*--- End Create Code ----------------------------------------------------------------*/
+
+/*--- Start Colour Select Code ----------------------------------------------------------------*/
+
+.t-shirt-select {
+    margin-top: 70px;
+}
+
+.container-gallery {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery {
+    margin: 5px;
+    padding-top: 5px;
+    border: 1px solid black;
+    border-radius: 25px;
+    float: left;
+    width: 390px;
+}
+
+.gallery img {
+    margin-left: 60px;
+    width: 70%;
+}
+
+.desc {
+    padding: 12px;
+    text-align: center;
+}
+
+/*--- End Colour Select Code ----------------------------------------------------------------*/
+
+/*--- Start Contact Us Code ----------------------------------------------------------------*/
+/*--- Start Contact Form ----------------------------------------------------------------*/
+    
+    .Customer-form {
+        float: left;
+        width: 50%;
+        height: 700px;
+        border-radius: 25px;
+        border: 2px solid black;
+        background-color: lightgrey;
+        padding: 20px;
+        margin-left: 80px;
+        margin-top: 60px;
+    }
+
+    .Customer-form:after {
+        content: "";
+        background-color: #000;
+        position: absolute;
+        width: 5px;
+        height: 730px;
+        top: 100px;
+        left: 56%;
+        display: block;
+        margin-top: 60px;
+    }
+
+    .Customer-form input[type=text], textarea {
+        width: 95%;
+        padding: 12px;
+        border: 2px solid black;
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-left: 10px;
+        margin-bottom: 16px;
+        resize: vertical;
+        font-family: Arial;
+    }
+
+    .Customer-form input[type=submit] {
+        width: 20%;
+        background-color: white;
+        color: Black;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    .Customer-form input[type=submit]:hover {
+        background-color: #D3D3D3;
+    }
+
+/*--- End Contact Form ----------------------------------------------------------------*/
+
+/*--- Start Contact Info ----------------------------------------------------------------*/
+
+    .Contact-info {
+        float: right;
+        width: 36%;
+        height: 700px;
+        border-radius: 25px;
+        /* border: 2px solid black; */
+        /* background-color: lightgrey; */
+        padding: 20px;
+        margin-right: 80px;
+        margin-top: 60px;
+    }
+
+    .contactus-image {
+        border: 2px solid black;
+        border-radius: 8px;
+        background: url(images/contactus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 300px;
+        height: 360px;
+        margin-left: 130px;
+        margin-top: 50px;
+    }
+
+    .page-heading {
+        margin-top: -30px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    h2 {
+        float: left;
+        width: 28%;
+        padding: 12px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-right: 10px;
+        margin-bottom: 16px;
+        margin-left: 10px;
+        resize: vertical;
+        font-family: Arial;
+    }
+
+    .p2 {
+        float: right;
+        width: 66%;
+        padding: 12px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        margin-right: 10px;
+        resize: vertical;
+        font-family: Arial;
+    }
+
+/*--- End Contact Info ----------------------------------------------------------------*/
+/*--- Start Contact Us Code ----------------------------------------------------------------*/
+
+/*--- Start Checkout Code ----------------------------------------------------------------*/
+/*--- Start Shipping Info ----------------------------------------------------------------*/
+
+    .shipping-info {
+        float: left;
+        width: 920px;
+        height: 700px;
+        background-color: lightgrey;
+        border: 2px solid black;
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+
+    .Continue-shipping {
+        float: left;
+        margin-top: 680px;
+        margin-left: -200px;
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        padding: 30px 10px 30px 10px;
+        border-radius: 15px;
+    }
+
+    .shipping-info:after {
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 5px;
+        height: 730px;
+        top: 100px;
+        left: 61%;
+        display: block;
+        margin-top: 60px;
+    }
+
+/*--- End Shipping Info ----------------------------------------------------------------*/
+
+/*--- Start Shipping Content ----------------------------------------------------------------*/
+
+    .shipping-info p {
+        padding: 0px 20px 0px 20px;
+    }
+
+/*--- End Shipping Content ----------------------------------------------------------------*/
+
+/*--- Start Price Content ----------------------------------------------------------------*/
+
+    .price-content {
+        float: right;
+        width: 490px;
+        height: 700px;
+        background-color: lightgrey;
+        border: 2px solid black;
+        margin-top: 60px;
+        margin-right: 100px;
+    }
+
+    hr {
+        Width: 80%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border: 1px solid black;
+        margin-left: 10%;
+    }
+
+    .tbx_DisCode {
+        width: 50%;
+        margin-left: 5%;
+        padding: 10px 6px 10px 6px;
+    }
+
+    .ApplyDis {
+        width: 20%;
+        margin-left: 5%;
+        padding: 10px 15px 10px 15px;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .price-content label {
+        margin-left: 10%;
+    }
+
+/*--- End Price Content ----------------------------------------------------------------*/
+/*--- End Checkout Code  ----------------------------------------------------------------*/
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 8px 0 8px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 20px 0 0 40px;
+    border: none;
+    width: 80%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+p3 
+{
+    margin: 0 40px 0 40px;
+    font-size: 20px;
+}
+
+span.price {
+    margin: 10px 0 10px 30px;
+    color: darkgreen;
+}
